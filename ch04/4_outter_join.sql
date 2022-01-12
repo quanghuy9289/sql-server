@@ -3,7 +3,7 @@ use AP;
 -- OUTTER JOIN
 -- LEFT|RIGHT|FULL JOIN
 -- retrieves all rows that satify join condition , plus unmatched rows in one or both tables - table in LEFT, RIGHT or both (FULL)
--- when row with unmatched columns is retrieved, any columns from other table is given NULL value
+-- when row with unmatched columns is retrieved, any columns from other tables is given NULL value
 Select VendorName, InvoiceNumber ,InvoiceTotal
 From Vendors LEFT JOIN Invoices
 	ON Vendors.VendorID = Invoices.VendorID
