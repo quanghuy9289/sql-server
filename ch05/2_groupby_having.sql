@@ -42,7 +42,7 @@ Order by VendorState, VendorCity;
 -- search condition in HAVING is applied AFTER the rows are grouped and aggregates are calculated
 -- HAVING can only refer to a column included in SELECT or GROUP BY
 -- WHERE can refer any columns in base tables
--- Aggregate function can only be coded in HAVING clause. WHERE clause cann't contain aggregate function
+-- Aggregate function can only be coded in HAVING clause. WHERE clause can't contain aggregate function
 
 -- group by VendorName then filter groups have AVG invoice total > 500
 Select VendorName, COUNT(*) AS InvoicesQty, AVG(InvoiceTotal) AS InvoiceAvg
